@@ -1,0 +1,156 @@
+:root {
+  --body-bg-color: rgb(255,255,255);	
+	--footer-bg-color: rgba(70,70,70, 0.90);	
+	--footer-color: rgb(255,255,255);
+	--footer-color-hover: rgb(200,200,200);		
+  --header-color: rgb(255,255,255);
+  --header-color-dark: rgb(70,70,70);		
+	--header-bg-color: rgba(255,255,255,0.90);
+	--header-bg-color-end-advent-pink: rgba(240,91,198,0.75);	
+	--header-bg-color-end-advent-purple: rgba(90,47,107,0.75);
+	--header-bg-color-end-advent-white: rgba(255,255,255,0.75);
+	--header-bg-color-end: rgba(138,123,65,0.75);		
+	
+	--header-bg-color-end: rgba(63,113,191,0.75);			
+  --main-bg-color: rgb(255,255,255);	
+	--main-color: rgb(70,70,70);	
+
+	--important-notification-color: rgb(245, 228, 39);
+	
+	/* Foundation Overrides */
+	
+	--button-bg-primary: rgb(138,123,65);
+	--button-bg-primary: rgb(63,113,191);	
+
+}
+
+footer {
+	background-color: var(--footer-bg-color);
+	padding-top: 30px;
+}
+
+footer h5, footer ul, footer ul li a, footer div {
+	color: var(--footer-color);
+	text-decoration: none;
+}
+
+footer ul li a:hover {
+	color: var(--footer-color-hover);
+}
+
+footer ul.parishes li {
+	padding-bottom: 10px;
+}
+
+footer .copy {
+	padding: 35px 0px;
+}
+
+/* HEADER STYLES FOR THE INDEX PAGE  */
+
+header.index {
+  background: url(../img/bg.jpg) no-repeat center center fixed;
+  background-size: cover;	
+	color: var(--header-color);
+	font-family: 'Lato', sans-serif;
+	margin: 0px 0px 35px 0px;
+  transition: background-color 2.5s linear 0.45s;	
+}
+
+header.index div.cell:nth-of-type(1) {
+	background-color: var(--header-bg-color);
+	color: var(--header-color-dark);
+	padding-top: 15px;		
+}
+
+header.index div.cell:nth-of-type(1) ul {
+	padding-bottom: 35px;
+}
+
+header.index div.cell:nth-of-type(1) ul li a {
+	color: var(--header-color-dark);
+	text-decoration: none;	
+}
+
+header.index div.cell:nth-of-type(1) ul li a:hover {
+	color: var(--header-color-dark);
+	text-decoration: underline;
+}
+
+header.index div.cell:nth-of-type(1) ul li a.button {
+	margin-bottom: -10px;;
+}
+
+header.index div.cell:nth-of-type(1) ul li a.button:hover {
+	text-decoration: none;
+}
+
+header.index div.cell:nth-of-type(2) {
+	background-color: var(--header-bg-color);	
+	padding: 25px;	
+  transition: background-color 2.5s linear 0.45s;		
+}
+
+header.index div.cell:nth-of-type(2) h1 {
+	font-weight: bolder;	
+}
+
+header.index.api-loaded div.cell:nth-of-type(2) {
+	background-color: var(--header-bg-color-end);
+}
+
+header.index div.grid-container:nth-of-type(2) {
+	background-color: transparent;
+	margin-top: -65px;
+}
+
+header.index div.cell:nth-of-type(2) h6 {
+	color: var(--header-color);
+	font-weight: bolder;
+	margin-bottom: 0px;
+	margin-top: -12px;
+	padding-bottom: 5px;
+  transition: color 2.5s linear 0.45s;		
+}
+
+header.index.api-loaded div.cell:nth-of-type(2) h6 {
+	color: var(--important-notification-color);
+}
+
+/* HEADER STYLES FOR THE INTERIOR PAGES  */
+
+
+header.interior {
+	background-color: var(--header-bg-color-end);
+	color: var(--header-color);
+	font-family: 'Lato', sans-serif;	
+}
+
+
+main {
+  background-color: var(--main-bg-color);		
+	color: var(--main-color);
+	min-height: 600px;
+}
+
+/*  Foundation Style Overrides  */
+
+.button {
+	border-radius: 20px;
+}
+
+.button.primary {
+	background-color: var(--button-bg-primary);
+}
+
+.button.primary:hover {
+  filter: brightness(85%);
+}
+
+/* COMPONENTS  */
+
+.buttonbar {
+	padding: 15px 0px;
+}
+
+
