@@ -16,7 +16,8 @@
 	--main-color: rgb(70,70,70);	
 
 	--important-notification-color: rgb(245, 228, 39);
-	
+	--important-notification-color: rgb(220, 20, 60);	
+
 	/* Foundation Overrides */
 	
 	--button-bg-primary: rgb(138,123,65);
