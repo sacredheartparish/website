@@ -15,8 +15,8 @@
   	--main-bg-color: rgb(255,255,255);	
 	--main-color: rgb(70,70,70);	
 
-	--important-notification-color: rgb(245, 228, 39);
 	--important-notification-color: rgb(201, 38, 3);	
+	--important-notification-color: rgb(245, 228, 39);
 
 	/* Foundation Overrides */
 	
