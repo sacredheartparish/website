@@ -47,6 +47,63 @@ footer .copy {
 	padding: 35px 0px;
 }
 
+/* HEADER STYLES FOR THE CHILD PAGES  */
+
+header.child {
+	background: url(../img/bg.jpg) no-repeat center center fixed;
+	background-size: cover;	
+  	color: var(--header-color);
+  	font-family: 'Lato', sans-serif;
+  	margin: 0px 0px 35px 0px;
+}
+
+header.child div.cell:nth-of-type(1) {
+  background-color: var(--header-bg-color);
+  color: var(--header-color-dark);
+  padding-top: 15px;		
+}
+
+header.child div.cell:nth-of-type(1) ul {
+  padding-bottom: 35px;
+}
+
+header.child div.cell:nth-of-type(1) ul li a {
+  color: var(--header-color-dark);
+  text-decoration: none;	
+}
+
+header.child div.cell:nth-of-type(1) ul li a:hover {
+  color: var(--header-color-dark);
+  text-decoration: underline;
+}
+
+header.child div.cell:nth-of-type(1) ul li a.button {
+  margin-bottom: -10px;;
+}
+
+header.child div.cell:nth-of-type(1) ul li a.button:hover {
+  text-decoration: none;
+}
+
+/* Content Area */
+header.child div.cell:nth-of-type(2) {
+	color: var(--main-color);	
+  	background-color: var(--header-bg-color);	
+  	padding: 25px;			
+}
+
+header.child div.cell:nth-of-type(2) h1 {
+  	font-weight: bolder;	
+}
+
+header.child div.grid-container:nth-of-type(2) {
+  background-color: transparent;
+  margin-top: -65px;
+}
+
+
+
+
 /* HEADER STYLES FOR THE INDEX PAGE  */
 
 header.index {
@@ -118,19 +175,12 @@ header.index.api-loaded div.cell:nth-of-type(2) h6 {
 	color: var(--important-notification-color);
 }
 
-/* HEADER STYLES FOR THE INTERIOR PAGES  */
-
-
-header.interior {
-	background-color: var(--header-bg-color-end);
-	color: var(--header-color);
-	font-family: 'Lato', sans-serif;	
+main {
+  	background-color: var(--main-bg-color);		
+	color: var(--main-color);
 }
 
-
-main {
-  background-color: var(--main-bg-color);		
-	color: var(--main-color);
+body.index main {
 	min-height: 600px;
 }
 
