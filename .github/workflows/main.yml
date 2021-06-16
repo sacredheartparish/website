@@ -1,0 +1,17 @@
+jobs:
+  keep_file_updated:
+    runs-on: ubuntu-latest
+    name: Keep file updated
+    steps:
+    - name: Checkout repo
+      id: checkout
+      uses: actions/checkout@v2
+    - name: Update file
+      id: update_file
+      uses: TheLastProject/keep-remote-file-locally-up-to-date-action@v1
+      with:
+        url: http://calapi.inadiutorium.cz/api/v0/en/calendars/general-en/today
+        file_in_repo: external/today.json
+on:
+  schedule:
+    - cron: '0 0 * * *'
