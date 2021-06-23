@@ -403,13 +403,11 @@
 		
 		<script>
 			window.addEventListener('load', function() {
-					// var calendarApiRequest = new XMLHttpRequest();
-					// calendarApiRequest.addEventListener("load", processCalendarApiSuccess);
-					// calendarApiRequest.addEventListener("error", processCalendarApiError);				
-					// calendarApiRequest.open("GET", "http://calapi.inadiutorium.cz/api/v0/en/calendars/general-en/today");
-					// calendarApiRequest.open("GET", "https://sacredheartandstbridget.com/external/today.json");
-					// calendarApiRequest.send();
-					processCalendarApiError();
+					var calendarApiRequest = new XMLHttpRequest();
+					calendarApiRequest.addEventListener("load", processCalendarApiSuccess);
+					calendarApiRequest.addEventListener("error", processCalendarApiError);				
+					calendarApiRequest.open("GET", "https://sacredheartandstbridget.com/external/today.json");
+					calendarApiRequest.send();
 			})
 			
 			
